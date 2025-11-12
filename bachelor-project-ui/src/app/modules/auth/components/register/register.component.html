@@ -1,0 +1,59 @@
+<div class="container">
+  <form [formGroup]="registerForm">
+    <div class="form-row">
+      <label for="email">Email</label>
+      <input id="email"
+             formControlName="email"
+             [ngClass]="{'input-error': (email.touched && !email.valid)}"
+             type="email"
+             autocomplete="off"
+             placeholder="Enter email">
+    </div>
+
+    <div class="form-row">
+      <label for="password">Password</label>
+      <input id="password"
+             formControlName="password"
+             [ngClass]="{'input-error': (password.touched && !password.valid)}"
+             type="password"
+             autocomplete="off"
+             placeholder="Enter password">
+    </div>
+
+    <div class="form-row">
+      <label for="confirmPassword">Confirm Password</label>
+      <input id="confirmPassword"
+             formControlName="confirmPassword"
+             [ngClass]="{'input-error': (password.touched && !password.valid)}"
+             type="password"
+             autocomplete="off"
+             placeholder="Enter password again">
+    </div>
+
+    <div class="form-row">
+      <label for="firstName">First Name</label>
+      <input id="firstName"
+             formControlName="firstName"
+             [ngClass]="{'input-error': (firstName.touched && !firstName.valid)}"
+             autocomplete="off"
+             placeholder="Enter first name"/>
+    </div>
+
+    <div class="form-row">
+      <label for="lastName">Last Name</label>
+      <input id="lastName"
+             formControlName="lastName"
+             [ngClass]="{'input-error': (lastName.touched && !lastName.valid)}"
+             autocomplete="off"
+             placeholder="Enter last name"/>
+    </div>
+
+    <button type="button"
+            class="register-btn"
+            (click)="submitRegister()">Register</button>
+
+    <button type="button"
+            class="login-btn"
+            [routerLink]="['/login']">I already have an account</button>
+  </form>
+</div>

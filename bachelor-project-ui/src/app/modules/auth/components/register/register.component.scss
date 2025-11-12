@@ -1,0 +1,63 @@
+.container {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  margin-top: 100px;
+  height: 675px;
+  width: 325px;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background-color: #d2ffcd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+input {
+  height: 40px;
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border: 0;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+button {
+  height: 40px;
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border: 0;
+  border-radius: 3px;
+  font-weight: 700;
+  background-color: #efe07c;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.register-btn {
+  margin-top: 35px;
+}
+
+.login-btn {
+  margin-top: 30px;
+}
+
+.input-error {
+  border: red 1px solid;
+}

@@ -1,0 +1,33 @@
+USE [bachelor_project]
+GO
+/****** Object:  Trigger [dbo].[UrlReportUpdate]    Script Date: 12-May-23 6:41:17 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		Alexandru Sasu
+-- Create date: 12.05.2023
+-- Description:	Updates the value from the column "DateModified" with the current date when a URL Report is updated.
+-- =============================================
+ALTER TRIGGER [dbo].[UrlReportUpdate]
+   ON  [dbo].[UrlReports]
+   AFTER UPDATE
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+    -- Insert statements for trigger here
+	IF ((SELECT TRIGGER_NESTLEVEL()) > 1) RETURN;
+
+    DECLARE @Id INT
+
+    SELECT @Id = INSERTED.Id
+    FROM INSERTED
+
+    UPDATE dbo.UrlReports
+    SET DateModified = GETDATE()
+    WHERE Id = @Id
+END

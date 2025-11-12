@@ -1,0 +1,857 @@
+﻿{
+  "TrainingTime": 60,
+  "Scenario": "Classification",
+  "DataSource": {
+    "Type": "TabularFile",
+    "Version": 1,
+    "FilePath": "C:\\Users\\Alex\\OneDrive - unibuc.ro\\Desktop\\Facultate\\Anul III\\Lucrarea de licenta\\Lucrarea\\Detalii despre modele si fisiere\\model_hybrid_64k_32\\train_features_7.csv",
+    "Delimiter": ",",
+    "DecimalMarker": ".",
+    "HasHeader": true,
+    "ColumnProperties": [
+      {
+        "ColumnName": "dots",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "http_status",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "url_length",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "at_symbol",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "prefix_suffix",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "ip_address",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "double_slash",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "short_serv",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "domain_status",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "domain_age",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "domain_reg",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "report",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "hyperlinks",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "a_rate",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "img_rate",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "link_rate",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "script_rate",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "a_without_href_rate",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "empty_hyp_rate",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "int_hyp_rate",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "ext_hyp_rate",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "ext_int_hyp_rate",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "forms",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "sus_forms",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "redirects",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "request_url",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "sus_anchors",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "links_in_tags",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "email_in_forms",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "sfh",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "iframe",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "favicon",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "label",
+        "ColumnPurpose": "Label",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      }
+    ]
+  },
+  "Environment": {
+    "Type": "LocalCPU",
+    "Version": 1
+  },
+  "RunHistory": {
+    "Version": 1,
+    "Type": "Result",
+    "Trials": [
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "SdcaMaximumEntropyMulti",
+        "Score": 0.50568948891031817,
+        "RuntimeInSeconds": 0.27799999713897705
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "SdcaLogisticRegressionOva",
+        "Score": 0.50568948891031817,
+        "RuntimeInSeconds": 0.49399998784065247
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LbfgsMaximumEntropyMulti",
+        "Score": 0.82352941176470584,
+        "RuntimeInSeconds": 0.44299998879432678
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LbfgsLogisticRegressionOva",
+        "Score": 0.82102217936354871,
+        "RuntimeInSeconds": 0.61500000953674316
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LightGbmMulti",
+        "Score": 0.83297974927675988,
+        "RuntimeInSeconds": 0.18600000441074371
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeOva",
+        "Score": 0.81581485053037606,
+        "RuntimeInSeconds": 0.39899998903274536
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "SdcaLogisticRegressionOva",
+        "Score": 0.50568948891031817,
+        "RuntimeInSeconds": 0.50800001621246338
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastForestOva",
+        "Score": 0.83606557377049184,
+        "RuntimeInSeconds": 0.52499997615814209
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "SdcaMaximumEntropyMulti",
+        "Score": 0.7336547733847637,
+        "RuntimeInSeconds": 0.22499999403953552
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LbfgsMaximumEntropyMulti",
+        "Score": 0.81542912246865962,
+        "RuntimeInSeconds": 0.56599998474121094
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LbfgsLogisticRegressionOva",
+        "Score": 0.8023143683702989,
+        "RuntimeInSeconds": 0.34200000762939453
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LightGbmMulti",
+        "Score": 0.81793635486981675,
+        "RuntimeInSeconds": 0.18199999630451202
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "SdcaMaximumEntropyMulti",
+        "Score": 0.50568948891031817,
+        "RuntimeInSeconds": 0.21199999749660492
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeOva",
+        "Score": 0.80154291224686591,
+        "RuntimeInSeconds": 0.43599998950958252
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastForestOva",
+        "Score": 0.84320154291224692,
+        "RuntimeInSeconds": 0.47999998927116394
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "SdcaLogisticRegressionOva",
+        "Score": 0.7635486981677917,
+        "RuntimeInSeconds": 0.7630000114440918
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LightGbmMulti",
+        "Score": 0.83895853423336553,
+        "RuntimeInSeconds": 0.18199999630451202
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LbfgsMaximumEntropyMulti",
+        "Score": 0.82082931533269043,
+        "RuntimeInSeconds": 0.23199999332427979
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LbfgsLogisticRegressionOva",
+        "Score": 0.8266152362584378,
+        "RuntimeInSeconds": 1.0640000104904175
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "SdcaMaximumEntropyMulti",
+        "Score": 0.77126325940212148,
+        "RuntimeInSeconds": 0.2370000034570694
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeOva",
+        "Score": 0.83259402121504344,
+        "RuntimeInSeconds": 0.42899999022483826
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastForestOva",
+        "Score": 0.83760848601735771,
+        "RuntimeInSeconds": 0.92400002479553223
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LbfgsMaximumEntropyMulti",
+        "Score": 0.80540019286403086,
+        "RuntimeInSeconds": 0.257999986410141
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "SdcaLogisticRegressionOva",
+        "Score": 0.77531340405014459,
+        "RuntimeInSeconds": 0.89399999380111694
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LbfgsLogisticRegressionOva",
+        "Score": 0.82217936354869814,
+        "RuntimeInSeconds": 0.84799998998641968
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LbfgsMaximumEntropyMulti",
+        "Score": 0.82835101253616206,
+        "RuntimeInSeconds": 0.71100002527236938
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LightGbmMulti",
+        "Score": 0.83452266152362586,
+        "RuntimeInSeconds": 0.26499998569488525
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "SdcaMaximumEntropyMulti",
+        "Score": 0.78360655737704921,
+        "RuntimeInSeconds": 0.25900000333786011
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeOva",
+        "Score": 0.83895853423336553,
+        "RuntimeInSeconds": 0.59200000762939453
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "SdcaLogisticRegressionOva",
+        "Score": 0.69913211186113788,
+        "RuntimeInSeconds": 0.52100002765655518
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastForestOva",
+        "Score": 0.84281581485053036,
+        "RuntimeInSeconds": 0.5
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LbfgsLogisticRegressionOva",
+        "Score": 0.8266152362584378,
+        "RuntimeInSeconds": 0.92000001668930054
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LightGbmMulti",
+        "Score": 0.82950819672131149,
+        "RuntimeInSeconds": 0.27000001072883606
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LbfgsMaximumEntropyMulti",
+        "Score": 0.82796528447444551,
+        "RuntimeInSeconds": 0.72000002861022949
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "SdcaMaximumEntropyMulti",
+        "Score": 0.50568948891031817,
+        "RuntimeInSeconds": 0.20399999618530273
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastForestOva",
+        "Score": 0.84455159112825462,
+        "RuntimeInSeconds": 0.515999972820282
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeOva",
+        "Score": 0.84358727097396335,
+        "RuntimeInSeconds": 0.47600001096725464
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LbfgsLogisticRegressionOva",
+        "Score": 0.80212150433944074,
+        "RuntimeInSeconds": 1.1319999694824219
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "SdcaLogisticRegressionOva",
+        "Score": 0.77512054001928643,
+        "RuntimeInSeconds": 1.5149999856948853
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LightGbmMulti",
+        "Score": 0.82950819672131149,
+        "RuntimeInSeconds": 0.18700000643730164
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LbfgsMaximumEntropyMulti",
+        "Score": 0.82295081967213113,
+        "RuntimeInSeconds": 0.90499997138977051
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeOva",
+        "Score": 0.85998071359691419,
+        "RuntimeInSeconds": 2.1659998893737793
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "SdcaMaximumEntropyMulti",
+        "Score": 0.50568948891031817,
+        "RuntimeInSeconds": 0.18600000441074371
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastForestOva",
+        "Score": 0.84493731918997106,
+        "RuntimeInSeconds": 2.3489999771118164
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LightGbmMulti",
+        "Score": 0.83297974927675988,
+        "RuntimeInSeconds": 0.37400001287460327
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LbfgsLogisticRegressionOva",
+        "Score": 0.82796528447444551,
+        "RuntimeInSeconds": 1.1390000581741333
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LbfgsMaximumEntropyMulti",
+        "Score": 0.82063645130183216,
+        "RuntimeInSeconds": 0.34400001168251038
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeOva",
+        "Score": 0.8613307618129219,
+        "RuntimeInSeconds": 0.76200002431869507
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastForestOva",
+        "Score": 0.819672131147541,
+        "RuntimeInSeconds": 3.8080000877380371
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LightGbmMulti",
+        "Score": 0.86171648987463834,
+        "RuntimeInSeconds": 0.21500000357627869
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "SdcaLogisticRegressionOva",
+        "Score": 0.50568948891031817,
+        "RuntimeInSeconds": 0.51999998092651367
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeOva",
+        "Score": 0.50568948891031817,
+        "RuntimeInSeconds": 0.921999990940094
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LbfgsMaximumEntropyMulti",
+        "Score": 0.82835101253616206,
+        "RuntimeInSeconds": 0.76700001955032349
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LightGbmMulti",
+        "Score": 0.83722275795564127,
+        "RuntimeInSeconds": 0.24899999797344208
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastForestOva",
+        "Score": 0.84474445515911278,
+        "RuntimeInSeconds": 1.4930000305175781
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LbfgsLogisticRegressionOva",
+        "Score": 0.81099324975892,
+        "RuntimeInSeconds": 0.70599997043609619
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "SdcaMaximumEntropyMulti",
+        "Score": 0.50568948891031817,
+        "RuntimeInSeconds": 0.20499999821186066
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LightGbmMulti",
+        "Score": 0.87405978784956606,
+        "RuntimeInSeconds": 0.3190000057220459
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeOva",
+        "Score": 0.87328833172613307,
+        "RuntimeInSeconds": 1.5980000495910645
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LbfgsMaximumEntropyMulti",
+        "Score": 0.8169720347155256,
+        "RuntimeInSeconds": 1.3220000267028809
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LbfgsLogisticRegressionOva",
+        "Score": 0.79556412729026038,
+        "RuntimeInSeconds": 0.27000001072883606
+      }
+    ],
+    "Pipeline": {
+      "parameter": {
+        "0": {
+          "OutputColumnNames": [
+            "dots",
+            "http_status",
+            "url_length",
+            "at_symbol",
+            "prefix_suffix",
+            "ip_address",
+            "double_slash",
+            "short_serv",
+            "domain_status",
+            "domain_age",
+            "domain_reg",
+            "report",
+            "hyperlinks",
+            "a_rate",
+            "img_rate",
+            "link_rate",
+            "script_rate",
+            "a_without_href_rate",
+            "empty_hyp_rate",
+            "int_hyp_rate",
+            "ext_hyp_rate",
+            "ext_int_hyp_rate",
+            "forms",
+            "sus_forms",
+            "redirects",
+            "request_url",
+            "sus_anchors",
+            "links_in_tags",
+            "email_in_forms",
+            "sfh",
+            "iframe",
+            "favicon"
+          ],
+          "InputColumnNames": [
+            "dots",
+            "http_status",
+            "url_length",
+            "at_symbol",
+            "prefix_suffix",
+            "ip_address",
+            "double_slash",
+            "short_serv",
+            "domain_status",
+            "domain_age",
+            "domain_reg",
+            "report",
+            "hyperlinks",
+            "a_rate",
+            "img_rate",
+            "link_rate",
+            "script_rate",
+            "a_without_href_rate",
+            "empty_hyp_rate",
+            "int_hyp_rate",
+            "ext_hyp_rate",
+            "ext_int_hyp_rate",
+            "forms",
+            "sus_forms",
+            "redirects",
+            "request_url",
+            "sus_anchors",
+            "links_in_tags",
+            "email_in_forms",
+            "sfh",
+            "iframe",
+            "favicon"
+          ]
+        },
+        "1": {
+          "InputColumnNames": [
+            "dots",
+            "http_status",
+            "url_length",
+            "at_symbol",
+            "prefix_suffix",
+            "ip_address",
+            "double_slash",
+            "short_serv",
+            "domain_status",
+            "domain_age",
+            "domain_reg",
+            "report",
+            "hyperlinks",
+            "a_rate",
+            "img_rate",
+            "link_rate",
+            "script_rate",
+            "a_without_href_rate",
+            "empty_hyp_rate",
+            "int_hyp_rate",
+            "ext_hyp_rate",
+            "ext_int_hyp_rate",
+            "forms",
+            "sus_forms",
+            "redirects",
+            "request_url",
+            "sus_anchors",
+            "links_in_tags",
+            "email_in_forms",
+            "sfh",
+            "iframe",
+            "favicon"
+          ],
+          "OutputColumnName": "Features"
+        },
+        "2": {
+          "OutputColumnName": "label",
+          "InputColumnName": "label"
+        },
+        "3": {
+          "NumberOfLeaves": 47,
+          "MinimumExampleCountPerLeaf": 38,
+          "LearningRate": 0.99999977667298645,
+          "NumberOfTrees": 12,
+          "SubsampleFraction": 7.1262968813407627E-05,
+          "MaximumBinCountPerFeature": 453,
+          "FeatureFraction": 0.78183278647472954,
+          "L1Regularization": 3.9943438566144907E-09,
+          "L2Regularization": 0.99999977667298645,
+          "LabelColumnName": "label",
+          "FeatureColumnName": "Features"
+        },
+        "4": {
+          "OutputColumnName": "PredictedLabel",
+          "InputColumnName": "PredictedLabel"
+        }
+      },
+      "estimators": [
+        "ReplaceMissingValues",
+        "Concatenate",
+        "MapValueToKey",
+        "LightGbmMulti",
+        "MapKeyToValue"
+      ]
+    },
+    "MetricName": "MicroAccuracy"
+  },
+  "Type": "TrainingConfig",
+  "Version": 2
+}

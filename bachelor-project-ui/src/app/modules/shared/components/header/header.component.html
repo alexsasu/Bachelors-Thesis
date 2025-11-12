@@ -1,0 +1,13 @@
+<header>
+  <h2 (click)="navigateHome()">CatchAPhish</h2>
+  <div class="links">
+    <a [routerLink]="['home']" routerLinkActive="router-link-active">Home</a>
+    <a *ngIf="isUserLoggedIn()" [routerLink]="['url-reports']" routerLinkActive="router-link-active">URL Reports</a>
+    <a *ngIf="isUserLoggedIn()" [routerLink]="['profile']" routerLinkActive="router-link-active">Profile</a>
+    <a *ngIf="!isUserLoggedIn()" [routerLink]="['login']" routerLinkActive="router-link-active">Login</a>
+    <a *ngIf="isUserLoggedIn()" [routerLink]="['logout']" routerLinkActive="router-link-active" (click)="logout()">Logout</a>
+  </div>
+</header>
+  <div *ngIf="isUserLoggedIn()" class="username">
+    <p>Welcome back, {{ username }}</p>
+  </div>

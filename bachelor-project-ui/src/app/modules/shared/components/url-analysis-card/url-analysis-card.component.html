@@ -1,0 +1,22 @@
+<div class="card">
+  <p><b>URL:</b> {{ urlAnalysis.url || '-' }}</p>
+  <div>
+    <div *ngIf="urlAnalysis.status; else elseBlock">
+      <p>
+        <b>Status:
+          <span [style.color]="urlAnalysis.status == 'Safe' ? '#2ac425' : '#ff2424ff'">
+            {{ urlAnalysis.status }}
+          </span>
+        </b>
+      </p>
+    </div>
+    <ng-template #elseBlock>
+      <p>-</p>
+    </ng-template>
+  </div>
+  <p><b>Domain:</b> {{ urlAnalysis.domain || '-' }}</p>
+  <p><b>Registrar Name:</b> {{ urlAnalysis.registrarName || '-' }}</p>
+  <p><b>Registrar URL:</b> {{ urlAnalysis.registrarUrl || '-' }}</p>
+  <p><b>Domain Creation Date:</b> {{ urlAnalysis.domainCreationDate || '-' }}</p>
+  <p><b>Domain Expiration Date:</b> {{ urlAnalysis.domainExpirationDate || '-' }}</p>
+</div>

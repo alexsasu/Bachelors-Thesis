@@ -1,0 +1,54 @@
+.profile{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+form{
+  margin-top: 100px;
+  height: 500px;
+  width: 325px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background-color: #d2ffcd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-row{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+input{
+  height: 40px;
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border: 0;
+  padding: 10px;
+}
+
+label{
+  margin-bottom: 5px;
+}
+
+button{
+  height: 40px;
+  width: 200px;
+  font-size: 14px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border: 0;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: #efe07c;
+}
+
+.delete-btn{
+  margin-top: 30px;
+}
+
+.save-btn{
+  margin-top: 30px;
+}

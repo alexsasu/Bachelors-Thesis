@@ -1,0 +1,44 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+<div class="container" style="margin-top: 8%;">
+  <div class="col-md-6 col-md-offset-3">
+    <div class="row">
+      <div id="logo" class="text-center">
+        <h1>Insert URL for web page analysis</h1>
+        <p>Only users that are logged in will be able to save a report of their analysis</p>
+      </div>
+      <form role="form" id="form-buscar" [formGroup]="urlAnalysisRequestForm">
+        <div class="form-group">
+          <div class="input-group">
+            <input id="url"
+                   class="form-control"
+                   type="url"
+                   value="urlString"
+                   formControlName="url"
+                   placeholder="Type URL"
+                   required/>
+            <span class="input-group-btn">
+              <button class="btn btn-success"
+                      type="submit"
+                      (click)="processUrl()">
+                <i class="glyphicon glyphicon-search" aria-hidden="true"></i> Analyze
+              </button>
+            </span>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="d-flex justify-content-center">
+      <div class="spinner-grow" id="loading" role="status">
+        <span class="sr-only"></span>
+      </div>
+    </div>
+
+    <div *ngFor="let urlAnalysis of urlsAnalyses"
+         class="view-url-analysis">
+      <app-url-analysis-card [urlAnalysis]="urlAnalysis">
+      </app-url-analysis-card>
+    </div>
+  </div>
+</div>

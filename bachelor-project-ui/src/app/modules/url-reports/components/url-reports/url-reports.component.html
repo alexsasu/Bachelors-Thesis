@@ -1,0 +1,10 @@
+<div *ngIf="urlsReports.length; else noReports" class="reports">
+  <div *ngFor="let urlReport of urlsReports"
+       class="view-url-analysis">
+    <app-url-analysis-card [urlAnalysis]="urlReport">
+    </app-url-analysis-card>
+  </div>
+</div>
+<ng-template #noReports>
+  <h1 class="no-reports">You don't have any reports yet</h1>
+</ng-template>

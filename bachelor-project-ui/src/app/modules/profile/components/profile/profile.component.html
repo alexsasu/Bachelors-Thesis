@@ -1,0 +1,36 @@
+<div class="profile">
+  <form [formGroup]="profileForm">
+    <div class="form-row">
+      <label for="email">Email</label>
+      <input id="email"
+             formControlName="email"
+             type="email"
+             autocomplete="off"
+             placeholder="Enter email">
+    </div>
+
+    <div class="form-row">
+      <label for="firstName">First Name</label>
+      <input id="firstName"
+             formControlName="firstName"
+             autocomplete="off"
+             placeholder="Enter first name">
+    </div>
+
+    <div class="form-row">
+      <label for="lastName">Last Name</label>
+      <input id="lastName"
+             formControlName="lastName"
+             autocomplete="off"
+             placeholder="Enter last name">
+    </div>
+
+    <button type="button"
+            class="save-btn"
+            (click)="saveChanges()">Save changes</button>
+
+    <button type="button"
+            class="delete-btn"
+            (click)="openDialog()">Delete account</button>
+  </form>
+</div>
