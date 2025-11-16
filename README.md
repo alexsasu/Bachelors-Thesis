@@ -11,7 +11,7 @@ The thesis consisted of coming up with a novel set of features for the detection
 
 The data used consisted only of URL strings and was taken from [this GitHub repository](https://github.com/ebubekirbbr/phishing_url_detection). The repository introduced an extensive dataset made up of 5 million URLs gathered from [PhishTank](https://www.phishtank.com/) and [Common Crawl](https://commoncrawl.org/). With 55% legitimate URLs and 45% phishing URLs, it contrasted many earlier datasets which were smaller, imbalanced, and not publicly available. However, due to a lack of computational resources available, only part of the dataset's records were used in this work. As such, the training dataset had 560,000 samples (76% split), the validation dataset had 120,000 samples (16% split), and the test dataset had 60,000 samples (8% split). Each split contained 50% legitimate URLs and 50% phishing URLs.
 
-The main AI models used were XGBoost, MLP, and Random Forest, and they were trained on the following features of the analyzed page: URL features, domain features, HTML and JavaScript features.
+The main AI models used were XGBoost, MLP, and Random Forest, and they were trained on all of the following features of the analyzed page: URL features, domain features, and HTML and JavaScript features. A CNN model was also used in earlier stages, but it was dropped due to long training times and performance similar to the mentioned models.
 
 The novel aspect of the set of features was that it combined features presented in the following papers from that time: [Phishing Websites Features](https://eprints.hud.ac.uk/id/eprint/24330/6/MohammadPhishing14July2015.pdf), [CANTINA+: A Feature-Rich Machine Learning Framework for Detecting Phishing Web Sites](https://dl.acm.org/doi/abs/10.1145/2019599.2019606), [An effective detection approach for phishing websites using URL and HTML features](https://www.nature.com/articles/s41598-022-10841-5), and [A machine learning based approach for phishing detection using hyperlinks information](https://link.springer.com/article/10.1007/s12652-018-0798-z).
 
@@ -74,7 +74,7 @@ The novel aspect of the set of features was that it combined features presented 
 
 </details>
 
-In total, there were 232 features used.
+In total, 232 features were used.
 
 #### Main Results
 
@@ -129,12 +129,8 @@ Concerning security aspects, an interceptor was used to log out the user if the 
 
 </details>
 
-## Presentation
-
 <details>
-<summary>The flow of the web application can be visualized here:</summary>
-
-</br>
+<summary><h3>Presentation of the web application:</h3></summary>
 
 ![chrome_3X7GzsL3kI](https://github.com/user-attachments/assets/e189fce5-e2b5-4c0a-96a1-3a29ae48a549)
 
