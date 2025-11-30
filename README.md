@@ -1,13 +1,13 @@
 # Bachelors-Thesis
 
-Thesis project made at the final of the Computer Science bachelor program from the Faculty of Mathematics and Computer Science, University of Bucharest, in the year 2023.
+Details about my thesis project, "Detection of Phishing Web Pages through Machine Learning", made at the final of the Computer Science bachelor program from the Faculty of Mathematics and Computer Science, University of Bucharest, in the year 2023.
 
 ## About
 
 The thesis consisted of coming up with a novel set of features for the detection of phishing webpages, training AI models on these features, and showcasing the performance of the best model through a custom web application. It was concluded that only analyzing URL features is not enough for reaching a safe verdict about a web page's status, and that the analysis of HTML and JavaScript features has great significance.
 
 <details>
-<summary><h3>AI component</h3></summary>
+<summary><h3>AI Component</h3></summary>
 
 The data used consisted only of URL strings and was taken from [this GitHub repository](https://github.com/ebubekirbbr/phishing_url_detection). The repository introduced an extensive dataset made up of 5 million URLs gathered from [PhishTank](https://www.phishtank.com/) and [Common Crawl](https://commoncrawl.org/). With 55% legitimate URLs and 45% phishing URLs, it contrasted many earlier datasets which were smaller, imbalanced, and not publicly available. However, due to a lack of computational resources available, only part of the dataset's records were used in this work. As such, the training dataset had 560,000 samples (76% split), the validation dataset had 120,000 samples (16% split), and the test dataset had 60,000 samples (8% split). Each split contained 50% legitimate URLs and 50% phishing URLs.
 
@@ -104,7 +104,7 @@ Part of the provided code was taken from the GitHub repositories [Malicious-Web-
 </details>
 
 <details>
-<summary><h3>Backend component:</h3></summary>
+<summary><h3>Backend Component</h3></summary>
 
 The application's backend was programmed using the ASP.NET Core framework. It allows for user account creation and management, and URL report generation and retrieval from the database. It makes use of several good practices, such as exception handling, separation of concerns through the Onion architecture, and role-based endpoint authorization.
 
@@ -121,7 +121,7 @@ The principal technologies used were the following: Entity Framework Core, ASP.N
 </details>
 
 <details>
-<summary><h3>Frontend component:</h3></summary>
+<summary><h3>Frontend Component</h3></summary>
 
 The project's UI was built using the Angular framework and stylized with the help of the Bootstrap framework, comprising of five web pages: "Home", where an (un)authenticated user can specify a web page URL and obtain a report of it after a short while, "URL Reports", where each user's web page reports are displayed, "Profile", "Register", and "Login".
 
@@ -130,7 +130,7 @@ Concerning security aspects, an interceptor was used to log out the user if the 
 </details>
 
 <details>
-<summary><h3>Presentation of the web application:</h3></summary>
+<summary><h3>Presentation of the Web Application</h3></summary>
 
 ![chrome_3X7GzsL3kI](https://github.com/user-attachments/assets/e189fce5-e2b5-4c0a-96a1-3a29ae48a549)
 
