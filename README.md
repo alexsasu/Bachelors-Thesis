@@ -138,6 +138,6 @@ Concerning security aspects, an interceptor was used to log out the user if the 
 
 ## License
 
-This work is licensed under an [MIT License](LICENSE).
+This repository's code is licensed under an [MIT License](LICENSE).
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
