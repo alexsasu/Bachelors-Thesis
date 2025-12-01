@@ -1,6 +1,6 @@
-# Bachelors-Thesis
+# Bachelor's Thesis
 
-Details about my thesis project, "Detection of Phishing Web Pages through Machine Learning", made at the final of the Computer Science bachelor program from the Faculty of Mathematics and Computer Science, University of Bucharest, in the year 2023.
+Details about my thesis, "Detection of Phishing Web Pages through Machine Learning", made at the final of the Computer Science bachelor program from the Faculty of Mathematics and Computer Science, University of Bucharest, in the year 2023.
 
 ## About
 
@@ -135,3 +135,9 @@ Concerning security aspects, an interceptor was used to log out the user if the 
 ![chrome_3X7GzsL3kI](https://github.com/user-attachments/assets/e189fce5-e2b5-4c0a-96a1-3a29ae48a549)
 
 </details>
+
+## License
+
+This work is licensed under an [MIT License](LICENSE).
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
