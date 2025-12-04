@@ -1,6 +1,6 @@
 # Bachelor's Thesis
 
-Details about my thesis, "Detection of Phishing Web Pages through Machine Learning", made at the final of the Computer Science bachelor program from the Faculty of Mathematics and Computer Science, University of Bucharest, in the year 2023.
+Details about my thesis, "Detection of Phishing Web Pages through Machine Learning", made during the Computer Science bachelor program from the Faculty of Mathematics and Computer Science, University of Bucharest. It was presented in the year 2023.
 
 ## About
 
